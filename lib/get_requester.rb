@@ -9,7 +9,7 @@ class GetRequester
     require 'net/http'
     url=@url
     uri=URI.parse(url)
-    response= NET::HTTP.get_response(uri)
+    response= Net::HTTP.get_response(uri)
     response.body 
   end
   def parse_json
